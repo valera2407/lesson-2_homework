@@ -43,5 +43,14 @@ public class Main {
         }
         System.out.println("Okay, we did it");
         //слева направо
+        int quantity = 0;
+        String Lnumber = Long.toBinaryString(361927548);
+        int leught = Lnumber.length();
+        for (int i = 0; i <= leught - 1; i++){
+            char value = Lnumber.charAt(i);
+            if (value == '1')
+                quantity++;
+        }
+        System.out.println(quantity+ " - bits with a value of '1'");
     }
 }
